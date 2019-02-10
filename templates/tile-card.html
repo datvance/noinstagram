@@ -1,0 +1,23 @@
+
+  <div class="tile is-parent">
+    <article class="tile is-child box">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-square">
+            <a href="{{ @link }}"><img src="{{ @src }}" alt="photo from {{ @account }}"></a>
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p><a href="https://instagram.com/{{ @account }}/">{{ @account }}</a> | {{ @num_likes}} ❤️ | {{ @num_comments }} 💬</p>
+            </div>
+          </div>
+          <div class="content">
+            {{ @caption }}
+            <p class="is-size-7" style="text-align: right;">{{ @created_time }}</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
