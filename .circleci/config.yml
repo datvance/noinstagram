@@ -26,7 +26,7 @@ jobs:
             git config user.email "${CIRCLE_USERNAME}@gmail.com"
             git config user.name "CircleCI"
             changes=$(git status --short ./docs/index.html);
-            if [ -z "$changes" ]; then
+            if [ -n "$changes" ]; then
               git commit ./docs/index.html -m "Build ${CIRCLE_BUILD_NUM}"
               git push https://${GITHUB_ACCESS_TOKEN}:x-oauth-basic@${CIRCLE_REPOSITORY_URL} ${CIRCLE_BRANCH}
             fi
@@ -36,7 +36,7 @@ workflows:
   hourly:
     triggers:
       - schedule:
-          cron: "53 * * * *"
+          cron: "58 * * * *"
           filters:
             branches:
               only:
