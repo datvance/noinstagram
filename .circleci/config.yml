@@ -36,6 +36,10 @@ workflows:
   hourly:
     triggers:
       - schedule:
-          cron: "33 * * * *"
+          cron: "37 * * * *"
+          filters:
+            branches:
+              only:
+                - master
     jobs:
       - build
