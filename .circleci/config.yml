@@ -30,3 +30,12 @@ jobs:
               git commit ./docs/index.html -m "Build ${CIRCLE_BUILD_NUM}"
               git push origin ${CIRCLE_BRANCH}
             fi
+
+workflows:
+  version: 2
+  hourly:
+    triggers:
+      - schedule:
+          cron: "33 * * * *"
+    jobs:
+      - build
