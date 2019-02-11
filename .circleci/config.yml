@@ -28,7 +28,7 @@ jobs:
             changes=$(git status --short ./docs/index.html);
             if [ -n "$changes" ]; then
               git commit ./docs/index.html -m "Build ${CIRCLE_BUILD_NUM}"
-              git push https://${GITHUB_ACCESS_TOKEN}:x-oauth-basic@${CIRCLE_REPOSITORY_URL} ${CIRCLE_BRANCH}
+              git push https://${GITHUB_ACCESS_TOKEN}:x-oauth-basic@github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.git ${CIRCLE_BRANCH}
             fi
 
 workflows:
@@ -36,7 +36,7 @@ workflows:
   hourly:
     triggers:
       - schedule:
-          cron: "58 * * * *"
+          cron: "04 * * * *"
           filters:
             branches:
               only:
