@@ -1,6 +1,6 @@
 # noinstagram
 
-I got rid of my IG account some time ago, but I'd still like to see my wife's photos. I was just visiting the IG website for each public user I wanted to view, but that was way too much work. So I [built this](https://datvance.github.io/noinstagram/) one Sunday.
+I got rid of my IG account some time ago, but I'd still like to see [photos from my wife](https://instagram.com/juiskie/) and [our dog](https://instagram.com/scooterpablovance/). I was just visiting the IG website for each public user I wanted to view, but that was way too much work. So I [built this](https://datvance.github.io/noinstagram/) one Sunday.
 
 ## Want your own noinstagram page?
 
