@@ -1,6 +1,7 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
 
+$items_per_account = 10;
 $columns = 3;
 $tz_offset = 6 * 3600;
 
@@ -15,10 +16,10 @@ foreach($accounts as $account)
     switch(substr($account, 0, 1))
     {
       case '#':
-        $response = $instagram->getPaginateMediasByTag(str_replace('#', '', $account));
+        $response = $instagram->getMediasByTag(str_replace('#', '', $account), $items_per_account);
       break;
       default:
-        $response = $instagram->getPaginateMedias($account);
+        $response = $instagram->getMedias($account, $items_per_account);
     }
   }
   catch(Exception $e)
@@ -27,7 +28,7 @@ foreach($accounts as $account)
     exit;
   }
 
-  foreach($response['medias'] as $media)
+  foreach($response as $media)
   {
     /** @var \InstagramScraper\Model\Media $media */
     $created_at = $media->getCreatedTime();
