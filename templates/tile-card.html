@@ -4,7 +4,10 @@
       <div class="card">
         <div class="card-image">
           <figure class="image">
-            <a href="{{ @link }}"><img src="{{ @src }}" alt="photo from {{ @account }}"></a>
+            <a href="{{ @link }}"><img data-src="{{ @src }}"
+                                       alt="photo from {{ @account }}"
+                                       class="lazy"
+                                       src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="></a>
           </figure>
         </div>
         <div class="card-content">
