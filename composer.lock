@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d3ae784a2d6e7ba14c88c4d5f530a7ac",
+    "content-hash": "68067feefeeaa3f8883310d1e4ec664c",
     "packages": [
         {
             "name": "mashape/unirest-php",
@@ -286,16 +286,16 @@
         },
         {
             "name": "raiym/instagram-php-scraper",
-            "version": "v0.8.27",
+            "version": "v0.8.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/postaddictme/instagram-php-scraper.git",
-                "reference": "235477e7771eabc533aed2cd115e31b055d8d63d"
+                "reference": "d5aa635f961449e9f5eb888576777679bdecabb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/postaddictme/instagram-php-scraper/zipball/235477e7771eabc533aed2cd115e31b055d8d63d",
-                "reference": "235477e7771eabc533aed2cd115e31b055d8d63d",
+                "url": "https://api.github.com/repos/postaddictme/instagram-php-scraper/zipball/d5aa635f961449e9f5eb888576777679bdecabb5",
+                "reference": "d5aa635f961449e9f5eb888576777679bdecabb5",
                 "shasum": ""
             },
             "require": {
@@ -330,7 +330,7 @@
                 "instagram",
                 "scraper"
             ],
-            "time": "2018-12-20T04:36:02+00:00"
+            "time": "2019-02-14T06:16:02+00:00"
         }
     ],
     "packages-dev": [],
@@ -339,6 +339,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-json": "*"
+    },
     "platform-dev": []
 }
