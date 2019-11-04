@@ -9,8 +9,12 @@ I got rid of my IG account some time ago, but I'd still like to see [photos from
 - edit accounts.json with your preferred IG accounts and/or hashtags
 - sign up for [CircleCI](https://circleci.com) (it's free), add a Github Access Token, and start building
 
+You can also build using the noish.sh script. Just edit that script and set your GitHub username, and set
+an environment variable with your GitHub access token.  
+
 ### also...
 
 - thanks to [instagram-php-scraper](https://github.com/postaddictme/instagram-php-scraper) for the hard work
 - style and features are pretty basic, but hey, pull requests welcome
 - there are some variables in build.php you might want to change
+- Recently CircleCI shut down my builds for some reason, so YMMV
